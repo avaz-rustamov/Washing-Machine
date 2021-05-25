@@ -24,9 +24,11 @@ body {
   padding-left: 20px;
 }
 .site_washing_mashin {
-  margin-left: 200px;
+  margin-left: 80px;
 }
-.site_top {
+.sitemain {
+  position: relative;
+  z-index: 2;
 }
 .heading_item_first {
   color: var(--heading);
@@ -44,7 +46,7 @@ body {
   list-style: none;
 }
 .list_item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 65px;
 }
 .list_item {
   color: #EDC1C0
@@ -61,14 +63,21 @@ body {
 .site_list_text {
   width: 600px;
 }
+.washing_mashing {
+
+}
 .mashin_feature {
   display: flex;
   list-style: none;
-  width: 100px;
   padding-left: 0;
   margin: 0;
+
+}
+.mashin_feature::before {
+
 }
 .mashin_feature_item {
+  padding: 100px 100px;
   width: 300px;
   background-color: var(--bg-timer);
 }
@@ -81,4 +90,35 @@ body {
 }
 .feature_value {
   color: var(--bg-color);
+  font-size: 20px;
+}
+.feature_item {
+  font-size: 30px;
+  font-weight: 700 ;
+}
+.button {
+  position: absolute;
+  z-index: 1;
+  bottom: -34px;
+  left: 44px;
+  border: none;
+  font-size: 22px;
+  padding: 23px 136px;
+  color: var(--heading);
+  background-color: var(--button);
+}
+.buttom_right {
+  position: absolute;
+  bottom: 266px;
+  right: -62px;
+  border: 0;
+  background-color: #ECB9B8;
+}
+.buttom_left {
+  position: absolute;
+  top: 56px;
+  left: -62px;
+  border: 0;
+  transform: rotate(180deg);
+  background-color: #ECB9B8;
 }
